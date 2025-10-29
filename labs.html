@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELabs - Android Development Society</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <svg class="logo-svg" viewBox="0 0 100 120" xmlns="Elbas_logo.png">
+                <rect x="35" y="90" width="30" height="15" fill="#333" stroke="#FF8C00" stroke-width="2" rx="2"/>
+                
+                <ellipse cx="50" cy="50" rx="25" ry="35" fill="none" stroke="#FF8C00" stroke-width="2.5"/>
+                
+                <line x1="50" y1="35" x2="50" y2="55" stroke="#FF8C00" stroke-width="2"/>
+                <circle cx="50" cy="35" r="3" fill="#FF8C00"/>
+                <line x1="50" y1="40" x2="42" y2="45" stroke="#FF8C00" stroke-width="1.5"/>
+                <circle cx="42" cy="45" r="2.5" fill="#FF8C00"/>
+                <line x1="50" y1="40" x2="58" y2="45" stroke="#FF8C00" stroke-width="1.5"/>
+                <circle cx="58" cy="45" r="2.5" fill="#FF8C00"/>
+                <line x1="50" y1="50" x2="45" y2="58" stroke="#FF8C00" stroke-width="1.5"/>
+                <circle cx="45" cy="58" r="2.5" fill="#FF8C00"/>
+                <line x1="50" y1="50" x2="55" y2="58" stroke="#FF8C00" stroke-width="1.5"/>
+                <circle cx="55" cy="58" r="2.5" fill="#FF8C00"/>
+                
+                <g stroke="#FF8C00" stroke-width="3" stroke-linecap="round">
+                    <line x1="50" y1="5" x2="50" y2="12"/>
+                    <line x1="73" y1="12" x2="68" y2="17"/>
+                    <line x1="85" y1="30" x2="78" y2="33"/>
+                    <line x1="85" y1="55" x2="78" y2="55"/>
+                    <line x1="73" y1="75" x2="68" y2="70"/>
+                    <line x1="27" y1="12" x2="32" y2="17"/>
+                    <line x1="15" y1="30" x2="22" y2="33"/>
+                    <line x1="15" y1="55" x2="22" y2="55"/>
+                    <line x1="27" y1="75" x2="32" y2="70"/>
+                </g>
+            </svg>
+            <span class="logo-text">ELABS</span>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#domains">Domains</a></li>
+            <li><a href="#events">Events</a></li>
+            <!-- <li><a href="#members">Members</a></li> -->
+            <!-- <li><a href="#gallery">Gallery</a></li> -->
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1 class="floating">Android Development</h1>
+        <h2>& Mobile Innovation</h2>
+        <p class="subtitle">@ELabs</p>
+        <p class="tagline">
+            Empowering the next generation of mobile developers through innovation, collaboration, and cutting-edge technology. 
+            We craft powerful Android applications using Kotlin, Java, and Flask to create seamless user experiences 
+            that transform ideas into impactful digital solutions. Join us in building the future of mobile technology.
+        </p>
+        <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">
+                Explore Projects →
+            </a>
+            <a href="#join" class="btn btn-secondary">
+                Join ELabs Community
+            </a>
+        </div>
+    </section>
+
+    <section class="tech-stack" id="domains">
+        <h3 class="section-title">Our Technology Arsenal</h3>
+        <p class="section-subtitle">
+            Master the complete Android development ecosystem with industry-standard tools and frameworks
+        </p>
+        
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-icon">☕</div>
+                <h4>Java</h4>
+                <p>The cornerstone of Android development. Build enterprise-grade mobile applications with Java's robust, 
+                object-oriented programming paradigm. Perfect for creating scalable, maintainable code that stands the test of time.</p>
+                <ul class="tech-features">
+                    <li><strong>Native Android Development</strong> - Full access to Android SDK and APIs</li>
+                    <li><strong>Enterprise Applications</strong> - Build banking, e-commerce, and business apps</li>
+                    <li><strong>Multi-threading & Concurrency</strong> - Handle complex background operations</li>
+                    <li><strong>Rich Ecosystem</strong> - Access thousands of libraries and frameworks</li>
+                    <li><strong>Platform Independence</strong> - Write once, run anywhere philosophy</li>
+                </ul>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-icon">🚀</div>
+                <h4>Kotlin</h4>
+                <p>Google's officially recommended language for Android. Modern, concise, and safe - Kotlin reduces boilerplate code 
+                by up to 40% while providing powerful features like null safety, coroutines, and functional programming capabilities.</p>
+                <ul class="tech-features">
+                    <li><strong>Null Safety</strong> - Eliminate NullPointerExceptions at compile time</li>
+                    <li><strong>Coroutines</strong> - Simplified asynchronous programming and threading</li>
+                    <li><strong>Jetpack Compose</strong> - Modern declarative UI toolkit for stunning interfaces</li>
+                    <li><strong>Extension Functions</strong> - Extend existing classes with new functionality</li>
+                    <li><strong>100% Java Interoperable</strong> - Seamlessly work with Java code and libraries</li>
+                </ul>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-icon">🔥</div>
+                <h4>Flutter</h4>
+                <p>Lightweight yet powerful Python web framework for building RESTful APIs and backend services. 
+                Create robust server infrastructure to power your Android applications with real-time data, authentication, and cloud integration.</p>
+                <ul class="tech-features">
+                    <li><strong>RESTful API Development</strong> - Build scalable web services and endpoints</li>
+                    <li><strong>Database Integration</strong> - Connect with SQLite, PostgreSQL, MongoDB</li>
+                    <li><strong>Authentication & Security</strong> - JWT tokens, OAuth, user management</li>
+                    <li><strong>Real-time Features</strong> - WebSocket support for live updates</li>
+                    <li><strong>Cloud Deployment</strong> - Easy integration with AWS, Heroku, Google Cloud</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="section-title" style="margin-top: 80px;">What We Build</h3>
+        <p class="section-subtitle">
+            From concept to deployment - explore the diverse range of Android applications we create
+        </p>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h5>📱 Social Media Apps</h5>
+                <p>Instagram-style photo sharing, Twitter clones, messaging platforms with real-time chat functionality</p>
+            </div>
+            <div class="project-card">
+                <h5>🛒 E-Commerce Solutions</h5>
+                <p>Shopping apps with payment gateways, product catalogs, cart management, and order tracking</p>
+            </div>
+            <div class="project-card">
+                <h5>🎮 Gaming Applications</h5>
+                <p>2D/3D games, puzzle apps, educational gaming, multiplayer experiences with leaderboards</p>
+            </div>
+            <div class="project-card">
+                <h5>📊 Business Tools</h5>
+                <p>Productivity apps, task managers, CRM systems, inventory management, and analytics dashboards</p>
+            </div>
+            <div class="project-card">
+                <h5>🏥 Healthcare Apps</h5>
+                <p>Fitness trackers, medical record systems, appointment booking, telemedicine platforms</p>
+            </div>
+            <div class="project-card">
+                <h5>🎓 Educational Platforms</h5>
+                <p>E-learning apps, quiz platforms, course management, video streaming for education</p>
+            </div>
+            <div class="project-card">
+                <h5>🌐 IoT Integration</h5>
+                <p>Smart home controls, wearable device apps, sensor data visualization, automation systems</p>
+            </div>
+            <div class="project-card">
+                <h5>🎵 Media & Entertainment</h5>
+                <p>Music players, video streaming, podcast apps, photo editors, and content creation tools</p>
+            </div>
+        </div>
+    </section>
+ 
+
+
+    <script src="script.js"></script>
+       <footer>
+    <p>© 2025 E LABS | Android Development Club</p>
+  </footer>
+
+</body>
+</html>
